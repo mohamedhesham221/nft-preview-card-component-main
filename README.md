@@ -45,6 +45,8 @@ Users should be able to:
 
 - [Filter CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) - This helped me for adding shadow around the avatar image. I really liked this pattern and will use it going forward.
 - [Media Query Guide](https://css-tricks.com/a-complete-guide-to-css-media-queries/) - This is an amazing article which helped me finally understand how to use media query. I'd recommend it to anyone still learning this concept.
+- [Aria Hidden Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden) - This helped me to hide non-interactive content from the accessibility API.nore .
+
 
 ## Author
 
