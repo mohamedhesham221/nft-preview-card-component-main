@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    /* Primary */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --outfit: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--outfit);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    background-color: var(--mainBG);
+}
+
+.container {
+    width: 270px;
+    min-height: auto;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 8px;
+    background-color: var(--cardBG);
+}
+
+.card__img {
+    position: relative;
+}
+.card__img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 30px);
+    visibility: hidden;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    background-color: hsla(178, 100%, 50%, 0.548);
+    border-radius: 8px;
+}
+
+.card__img figcaption {
+    font-size: 20px;
+    color: var(--white);
+}
+.card__details p {
+    font-size: 13px;
+    color: var(--softBlue);
+    padding: 8px 0;
+    opacity: .7;
+}
+
+.eth__clock {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.eth__clock span {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.eth__clock span:first-child {
+    color: var(--cyan);
+}
+
+.eth__clock span:last-child {
+    color: var(--softBlue);
+    opacity: .7;
+}
+
+.eth__clock span img {
+    margin-right: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    margin: 15px 0;
+    background-color: var(--line);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+footer img {
+    width: 30px;
+    height: auto;
+    filter: drop-shadow(0 0 2.5px var(--white));
+    margin-right: 15px;
+}
+footer p {
+    font-size: 14px;
+    color: var(--white);
+}
+footer p span {
+    color: var(--softBlue);
+    opacity: .7;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

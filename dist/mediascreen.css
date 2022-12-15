@@ -1,0 +1,21 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        height: 100vh;
+    }
+
+    .card__img figcaption,
+    footer p,
+    .card__img {
+        transition: all .5s linear;
+        cursor: pointer;
+    }
+
+    .card__img figcaption:hover,
+    footer p:hover:not(footer p span) {
+        color: hsl(178, 100%, 50%);
+    }
+    .card__img:hover .layer{
+        visibility: visible;
+    }
+}
